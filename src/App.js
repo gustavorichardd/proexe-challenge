@@ -19,7 +19,7 @@ function App() {
     fetch(API_URL).then((response) => response.json()).then(response => {
       dispatch(initialUser(response))
     })
-  }, [user])
+  })
 
   return (
     <div>
