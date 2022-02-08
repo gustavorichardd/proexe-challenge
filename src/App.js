@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react'
 import { NewUserModal } from './components/NewUserModal'
-
 import { useSelector, useDispatch } from 'react-redux'
-import { initialUser, selectUser } from './redux/userSlice'
+import { initialUser } from './redux/userSlice'
 import { EditUserModal } from './components/EditUserModal'
 
 
@@ -21,7 +20,6 @@ function App() {
       dispatch(initialUser(response))
     })
   }, [])
-
 
   return (
     <div>
